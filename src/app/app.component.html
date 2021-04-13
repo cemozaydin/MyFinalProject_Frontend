@@ -1,17 +1,18 @@
-<!-- Welcome to {{title}}
-Hello {{user}}
 
-productId = {{product1.productId}}
-productName = {{product1.productName}}
-CategoryId = {{product1.categoryId}}
-UnitPrice = {{product1.unitPrice}}
+<div class="container">
+  <app-navi></app-navi>
+  <div class="row">
+    <div class="col-md-3">
+      <app-category></app-category>
+    </div>
+    <div class="col-md-9">
+      <app-product></app-product>
+    </div>    
+  </div>
+  
 
-<ul>
-  <li *ngFor="let product of products">{{product.productName}}</li> 
-</ul> -->
+  <router-outlet></router-outlet>
+</div>
 
-<app-navi></app-navi>
-<app-category></app-category>
-<app-product></app-product>
 
-<router-outlet></router-outlet>
+
